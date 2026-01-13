@@ -30,6 +30,30 @@
             padding: 20px;
         }
 
+        .page-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+        }
+
+        .product-image-section {
+            flex: 0 1 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 168, 181, 0.2);
+            animation: fadeIn 1s ease-out;
+        }
+
         .container {
             text-align: center;
             max-width: 600px;
@@ -40,6 +64,17 @@
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
             animation: fadeIn 1s ease-out;
+        }
+
+        @media (max-width: 768px) {
+            .page-wrapper {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .product-image-section {
+                flex: 0 1 280px;
+            }
         }
 
         @keyframes fadeIn {
@@ -208,7 +243,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="page-wrapper">
+        <!-- Product Image Section -->
+        <div class="product-image-section">
+            <img src="images/product.jpg" alt="KRYSTALIS • essentiel Product" />
+        </div>
+
+        <!-- Content Section -->
+        <div class="container">
         <div class="coming-soon-badge">🚀 Coming Soon</div>
         
         <div class="logo">
@@ -258,6 +300,7 @@
         <div class="footer-text">
             Black Diamond Ltd (UIC 207807571)<br>
             © 2026 KRYSTALIS. Tous droits réservés.
+        </div>
         </div>
     </div>
 
