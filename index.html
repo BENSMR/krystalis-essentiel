@@ -32,11 +32,11 @@
 
         .page-wrapper {
             display: flex;
+            flex-direction: column;
             gap: 40px;
             align-items: center;
             justify-content: center;
             max-width: 1200px;
-            flex-wrap: wrap;
         }
 
         .product-image-section {
@@ -64,6 +64,7 @@
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
             animation: fadeIn 1s ease-out;
+            width: 100%;
         }
 
         @media (max-width: 768px) {
@@ -467,11 +468,6 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <!-- Product Image Section -->
-        <div class="product-image-section">
-            <img src="images/krystalis-product.png" alt="KRYSTALIS • essentiel" />
-        </div>
-
         <!-- Content Section -->
         <div class="container">
         <div class="coming-soon-badge">🚀 Coming Soon</div>
