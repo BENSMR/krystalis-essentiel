@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYSTALIS • essentiel | Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pearl-white: #F9F9F9;
+            --turquoise: #00A8B5;
+            --satin-gold: #C5A059;
+            --deep-black: #1A1A1A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, var(--pearl-white) 0%, #e8f4f3 100%);
+            color: var(--deep-black);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 60px 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--satin-gold)/30;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: var(--deep-black);
+        }
+
+        .logo span {
+            color: var(--turquoise);
+        }
+
+        .tagline {
+            color: var(--satin-gold);
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            margin: 30px 0 20px;
+            color: var(--deep-black);
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            background: var(--satin-gold);
+            margin: 30px auto;
+        }
+
+        .coming-soon-badge {
+            display: inline-block;
+            background: var(--turquoise);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .email-section {
+            margin-top: 50px;
+        }
+
+        .email-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--satin-gold);
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .email-input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            padding: 14px 16px;
+            border: 1px solid var(--satin-gold)/30;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s ease;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            border-color: var(--turquoise);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(0, 168, 181, 0.1);
+        }
+
+        button {
+            padding: 14px 30px;
+            background: var(--turquoise);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 140px;
+        }
+
+        button:hover {
+            background: var(--deep-black);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 168, 181, 0.3);
+        }
+
+        .footer-text {
+            font-size: 0.75rem;
+            color: #999;
+            margin-top: 40px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--satin-gold)/30;
+            border-radius: 50%;
+            color: var(--satin-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .social-links a:hover {
+            background: var(--turquoise);
+            color: white;
+            border-color: var(--turquoise);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coming-soon-badge">🚀 Coming Soon</div>
+        
+        <div class="logo">
+            KRYSTALIS <span>•</span> ESSENTIEL
+        </div>
+        
+        <div class="tagline">L'Architecture du Soin</div>
+        
+        <div class="divider"></div>
+        
+        <h1>Bienvenue</h1>
+        
+        <p>
+            Nous sommes en train de créer quelque chose d'extraordinaire. 
+            KRYSTALIS • essentiel vous propose bientôt une expérience 
+            dermo-cosmétique révolutionnaire avec l'IA.
+        </p>
+        
+        <p style="font-size: 0.9rem; color: #999; font-style: italic;">
+            Une collection de soins de luxe européens, personnalisée par intelligence artificielle.
+        </p>
+        
+        <div class="divider"></div>
+        
+        <div class="email-section">
+            <label class="email-label">Soyez parmi les premiers informés</label>
+            
+            <div class="email-input-group">
+                <input 
+                    type="email" 
+                    id="emailInput" 
+                    placeholder="Votre adresse email" 
+                    required
+                >
+                <button onclick="subscribeEmail()">S'abonner</button>
+            </div>
+            
+            <p id="emailMessage" style="font-size: 0.85rem; color: #666; margin-top: 10px; display: none;"></p>
+        </div>
+        
+        <div class="social-links">
+            <a href="#" title="Instagram">f</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Email">@</a>
+        </div>
+        
+        <div class="footer-text">
+            Black Diamond Ltd (UIC 207807571)<br>
+            © 2026 KRYSTALIS. Tous droits réservés.
+        </div>
+    </div>
+
+    <script>
+        function subscribeEmail() {
+            const emailInput = document.getElementById('emailInput');
+            const message = document.getElementById('emailMessage');
+            const email = emailInput.value.trim();
+            
+            if (!email) {
+                message.style.display = 'block';
+                message.textContent = '❌ Veuillez entrer une adresse email valide.';
+                message.style.color = '#e74c3c';
+                return;
+            }
+            
+            if (!email.includes('@')) {
+                message.style.display = 'block';
+                message.textContent = '❌ Format email invalide.';
+                message.style.color = '#e74c3c';
+                return;
+            }
+            
+            // Success message
+            message.style.display = 'block';
+            message.textContent = '✓ Merci ! Vous serez notifié dès que nous serons prêts.';
+            message.style.color = '#00A8B5';
+            emailInput.value = '';
+            
+            // Optional: Send to a backend service (currently just shows success)
+            console.log('Email subscribed:', email);
+        }
+        
+        // Allow Enter key to submit
+        document.getElementById('emailInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') subscribeEmail();
+        });
+    </script>
+</body>
+</html>
